@@ -1,0 +1,105 @@
+/* styles.css (Example Styling) */
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+  overflow: auto;
+  padding-bottom: 30px;
+  /* must be same height as the footer */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    background: #777;
+    color: #fff; 
+    position: relative;
+    margin-top: -30px;
+    height: 30px;
+}
+
+section { 
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #ccc; 
+}
+
+section h2 {
+    font-size: 1.8em; 
+    margin-bottom: 10px; 
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+.alignRightImage {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.inlineImage {
+  display: inline;
+  margin: 0 0.125em;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.smallImage {
+  display: inline;
+  float: left;
+  margin: 0 0.125em;
+  height: 100px; 
+  padding: 0;
+  vertical-align: baseline;
+}
+
+
+.footerImage {
+  display: inline;
+  margin: 0 0.125em;
+  padding: 0;
+  height: 25px;
+  width: auto;
+  vertical-align: baseline;
+}
+
+.fullSizeImage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
