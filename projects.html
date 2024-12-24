@@ -16,12 +16,49 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h1>Projects</h1>
         <p>
-            Projects page coming soon! Projected completion date: December 30, 2024!
+            Here are two small snippets of projects I have worked on over the past couple of years when I have found free time between school, work, and family. Given I was working on my advanced degree from Fall 2022 until now, my daughter was born in Fall 2022, and I've been fully employed this whole time, I haven't had too much free time to devote to passion projects. That said, I've kept myself busy and have found some time to build a couple of projects that I'm proud of!
         </p>
+    <section class = "section">
+        <h2> Stock Market Lightsaber </h2>
+        <p>
+            As a fan of Star Wars with an interest in the current market performance of various stocks, I created a visual indicator of the current performance of my stock portfolio. Using the free version of the Python API from <a href = "https://finnhub.io/"> Finnhub</a>, I wrote a program to continuously look up the value of a portfolio (stored as a JSON file). Based on whether the current portfolio value is greater than the portfolio value at close of the previous day, I determine whether my day value has increased (green) or decreased (red). If I'm having internet connectivity problems, or if there is a different error, I set the color to blue to indicate no current results. 
+
+            <br>
+
+            Given the Star Wars universe has many additional colors, I created additional functions, operable by a button on the hilt, to cycle through different colors and modes. One other functional mode sets the color on a gradient from blue to red based on the current temperature. All of the code is written in Python and the initial version is saved <a href = "https://github.com/trevorhenningson/Lightsaber"> here</a>. The lightsaber hilt is 3D printed with a custom design based on Yoda's handle and is powered with a 5V DC plug wired directly to a Raspberry Pi Zero and the individually addressible RGB LED strip. It was quite a fun project that I undertook in the winter break of my Master's program in December 2023.  
+        </p>
+        <div class="scroll-container">
+            <img src="images/lightsaber/blue.png" alt="Lightsaber 1">
+            <img src="images/lightsaber/yellow.png" alt="Lightsaber 2">
+            <img src="images/lightsaber/red.png" alt="Lightsaber 3">
+            <img src="images/lightsaber/testing.png" alt="Lightsaber 4">
+        </div>
+    </section>
+    <section class = "section">
+        <h2> Metro Board </h2>
+        <p>
+            After my brother sent me a screenshot of a <a href = "https://www.reddit.com/r/washingtondc/comments/k9begb/saw_someone_post_a_similar_metro_board_a_few/"> Reddit Post</a> he found, I decided to make him a Metro Board for Christmas 2022. In late February 2023, I delivered on my goal. Taking the <a href = "code"> main source code from the original creater</a>, I built some minor additions to wish family members Happy Birthday or celebrate special national holidays like April Fools (turning the sign in to a Hot Dog Stand) or National Lawyer's Day. 
+
+            <br>
+
+            Overall this was a great project to learn a bit about controlling a LED matrix sign. Additionally, the established code base helped with the baseline functionality whereas I was able to focus more on making it special and unique with the packaging, aesthetics, and additional Easter eggs added in. 
+        </p>
+        <div class="scroll-container">
+            <img src="images/metroBoard/installed.png" alt="Installed Board">
+            <img src="images/metroBoard/benchTest.png" alt="Metro Board Bench Test">
+            <img src="images/metroBoard/powerWiring.png" alt="Direct Power Wiring">
+            <img src="images/metroBoard/plugInsert.png" alt="Plug Insert">
+            <img src="images/metroBoard/piCarriage.png" alt="RaspberryPi Carriage Setup">
+            <img src="images/metroBoard/initialSetup.png" alt="Living Room Test">
+        </div>
+    </section>
     </main>
+
+
 </body>
 
 <footer>

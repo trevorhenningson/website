@@ -103,3 +103,29 @@ h1 {
     height: auto;
     max-width: 100%;
 }
+
+/* Scrollable list container */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px; /* Space between images */
+    padding: 10px;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+/* Image styling */
+.scroll-container img {
+    height: 400px; 
+    scroll-snap-align: start;
+}
+
+/* Optional: Hide the scrollbar */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
